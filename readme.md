@@ -90,4 +90,4 @@ $ make lint
 ## License
 The MIT License, 2014 [Charlike Mike Reagent](https://github.com/tunnckoCore) ([@tunnckoCore](https://twitter.com/tunnckoCore))
 ***
-_This file was rebuild with [`Ock`](https://github.com/tosckjs/ock) on June 22, 2014._
+_This file was build with [`Ock`](https://github.com/tosckjs/ock) on June 22, 2014._
