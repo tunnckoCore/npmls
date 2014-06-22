@@ -1,4 +1,4 @@
-npmls [![Build Status](https://travis-ci.org/tunnckoCore/npmls.png)](https://travis-ci.org/tunnckoCore/npmls) [![Dependencies Status](https://david-dm.org/tunnckoCore/npmls/status.svg)](https://david-dm.org/dlau/npmls) [![Coverage Status](https://coveralls.io/repos/tunnckoCore/npmls/badge.png?branch=master)](https://coveralls.io/r/tunnckoCore/npmls?branch=master)
+npmls [![Build Status](https://travis-ci.org/tunnckoCore/npmls.png)](https://travis-ci.org/tunnckoCore/npmls) [![Dependencies Status](https://david-dm.org/tunnckoCore/npmls/status.svg)](https://david-dm.org/tunnckoCore/npmls) [![Coverage Status](https://coveralls.io/repos/tunnckoCore/npmls/badge.png?branch=master)](https://coveralls.io/r/tunnckoCore/npmls?branch=master)
 ================
 
 > List global/local npm installed packages, more compact and simple.
