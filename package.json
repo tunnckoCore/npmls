@@ -1,0 +1,53 @@
+{
+  "name": "npmls",
+  "version": "0.0.1",
+  "description": "List all installed node (npm) modules, via streaming, based on `process.cwd()`",
+  "main": "index.js",
+  "bin": {
+    "npmls": "index.js"
+  },
+  "scripts": {},
+  "repository": "tunnckoCore/npmls",
+  "keywords": [
+    "stream",
+    "streaming",
+    "list",
+    "all",
+    "node",
+    "modules",
+    "nodemodules",
+    "npmls",
+    "npm",
+    "ls",
+    "installed",
+    "global",
+    "local",
+    "simple",
+    "process"
+  ],
+  "dependencies": {
+    "readdirp": "~1.1.0",
+    "through2": "~0.5.1",
+    "repeat-string": "~0.1.2"
+  },
+  "devDependencies": {},
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/tunnckoCore/npmls/blob/master/license.md"
+  }],
+  "author": {
+    "name": "Charlike Mike Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "http://www.whistle-bg.tk"
+  },
+  "maintainers": [{
+    "name": "Charlike Mike Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "http://www.whistle-bg.tk"
+  }],
+  "contributors": [{
+    "name": "Charlike Mike Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "http://www.whistle-bg.tk"
+  }]
+}
