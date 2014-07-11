@@ -1,4 +1,8 @@
-# npmls [![NPM version][npmjs-img]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
+# npmls
+[![NPM version][npmjs-img]][npmjs-url]
+[![Using ferver][ferver-img]][ferver-url]
+[![Build Status][travis-img]][travis-url]
+[![Dependency Status][depstat-img]][depstat-url]
 
 > List all installed node (npm) modules, via streaming, based on `process.cwd()`
 
@@ -45,6 +49,7 @@ yielded result:
 Copyright (c) 2014 [Charlike Mike Reagent][author-website], [contributors](https://github.com/tunnckoCore/npmls/graphs/contributors).  
 Released under the [`MIT`][license-url] license.
 
+
 [npmjs-url]: http://npm.im/npmls
 [npmjs-img]: http://img.shields.io/npm/v/npmls.svg
 [npmjs-install]: https://nodei.co/npm/npmls.png?mini=true
@@ -65,3 +70,6 @@ Released under the [`MIT`][license-url] license.
 
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
+
+[ferver-img]: http://img.shields.io/badge/using-ferver-585858.svg
+[ferver-url]: https://github.com/jonathanong/ferver
