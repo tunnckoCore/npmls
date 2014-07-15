@@ -1,5 +1,6 @@
 {
   "node": true,
+  "browser": true,
   "esnext": true,
   "bitwise": true,
   "camelcase": true,
@@ -19,6 +20,9 @@
   "smarttabs": true,
   "globals": {
     "it": true,
-    "describe": true
+    "describe": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "window": true
   }
 }

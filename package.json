@@ -1,24 +1,31 @@
 {
   "name": "npmls",
-  "version": "0.1.1",
-  "description": "List all installed node (npm) modules, via streaming, based on `process.cwd()`",
+  "version": "0.2.0",
+  "description": "Streaming list of installed node modules. More compact and small. Support N and NVM version managers.",
   "main": "index.js",
+  "scripts": {},
   "bin": {
     "npmls": "index.js"
   },
-  "scripts": {},
   "repository": "tunnckoCore/npmls",
   "keywords": [
     "stream",
     "streaming",
     "list",
+    "check",
     "all",
     "node",
+    "n",
+    "nvm",
+    "version",
+    "managers",
     "modules",
     "nodemodules",
     "npmls",
     "npm",
     "ls",
+    "globally",
+    "locally",
     "installed",
     "global",
     "local",
@@ -27,8 +34,7 @@
   ],
   "dependencies": {
     "readdirp": "~1.1.0",
-    "through2": "~0.5.1",
-    "repeat-string": "~0.1.2"
+    "through2": "~0.5.1"
   },
   "devDependencies": {},
   "licenses": [{
@@ -39,15 +45,5 @@
     "name": "Charlike Mike Reagent",
     "email": "mameto_100@mail.bg",
     "url": "http://www.whistle-bg.tk"
-  },
-  "maintainers": [{
-    "name": "Charlike Mike Reagent",
-    "email": "mameto_100@mail.bg",
-    "url": "http://www.whistle-bg.tk"
-  }],
-  "contributors": [{
-    "name": "Charlike Mike Reagent",
-    "email": "mameto_100@mail.bg",
-    "url": "http://www.whistle-bg.tk"
-  }]
+  }
 }
