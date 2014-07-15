@@ -1,8 +1,11 @@
-## v1.0.0 / July 15, 2014
-- initial release
+## v1.0.1 / July 15, 2014
 - add `-g` (global) flag to list globally modules
 - supports so far only [N][n-url] and [NVM][nvm-url] version managers
 - no breaking changes
+
+
+## v1.0.0 / July 15, 2014
+- initial release
 
 
 [mocha-url]: https://github.com/visionmedia/mocha
