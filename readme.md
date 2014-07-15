@@ -1,7 +1,7 @@
 # npmls
 > Streaming list of installed node modules. More compact and small. Support N and NVM version managers.
 
-[![NPM version][npmjs-img]][npmjs-url]
+[![NPM version][npmjs-shields]][npmjs-url]
 [![Using ferver][ferver-img]][ferver-url]
 [![Build Status][travis-img]][travis-url]
 [![Dependency Status][depstat-img]][depstat-url]
