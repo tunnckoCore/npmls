@@ -1,3 +1,7 @@
+## v1.0.3 / July 15, 2014
+- add `-v/--version` flag for self version
+- add `--global` flag, missed
+
 ## v1.0.2 / July 15, 2014
 - add `-g` (global) flag to list globally modules
 - supports so far only [N][n-url] and [NVM][nvm-url] version managers

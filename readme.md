@@ -38,7 +38,7 @@ yields
 [npmls] readdirp
 [npmls] through2
 -------------------------
-[npmls] Found 15 modules. (52ms)
+[npmls] Found 15 modules. (32ms)
 ``````
 ### list globally modules
 ```
@@ -47,46 +47,55 @@ $ npmls -g
 yields
 ```
 [npmls] bower
+[npmls] david
 [npmls] gulp
 [npmls] jsdoc
 [npmls] jshint
 [npmls] jsontool
 [npmls] mocha
 [npmls] npm
-[npmls] should
 [npmls] npmls
+[npmls] should
+[npmls] supervisor
 -------------------------
-[npmls] Found 9 modules. (27ms)
+[npmls] Found 11 modules. (27ms)
 ```
 
+**flags**
++ -v,--version - package version
++ -g,--global - list global installed modules
+
+
 ## Authors & Contributors [![author tips][author-gittip-img]][author-gittip]
+
 **Charlike Mike Reagent**
 + [gittip/tunnckoCore][author-gittip]
 + [github/tunnckoCore][author-github]
 + [twitter/tunnckoCore][author-twitter]
 + [npmjs/tunnckoCore][author-npmjs]
++ [more ...][author-more]
 
 
 ## License [![MIT license][license-img]][license-url]
-Copyright (c) 2014 [Charlike Mike Reagent][author-website], [contributors](https://github.com/tunnckoCore/npmls/graphs/contributors).  
+Copyright (c) 2014 [Charlike Mike Reagent][author-website], [contributors][contrib-url].  
 Released under the [`MIT`][license-url] license.
 
 
 [mocha-url]: https://github.com/visionmedia/mocha
 
-[contrib-url]: https://github.com/tunnckoCore/npmls/graphs/contributors
-[npmjs-url]: http://npm.im/npmls
-[npmjs-shields]: http://img.shields.io/npm/v/npmls.svg
-[npmjs-install]: https://nodei.co/npm/npmls.svg?mini=true
+[contrib-url]: https://github.com/tunnckoCore/docks/graphs/contributors
+[npmjs-url]: http://npm.im/docks
+[npmjs-shields]: http://img.shields.io/npm/v/docks.svg
+[npmjs-install]: https://nodei.co/npm/docks.svg?mini=true
 
-[license-url]: https://github.com/tunnckoCore/npmls/blob/master/license.md
+[license-url]: https://github.com/tunnckoCore/docks/blob/master/license.md
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg
 
-[travis-url]: https://travis-ci.org/tunnckoCore/npmls
-[travis-img]: https://travis-ci.org/tunnckoCore/npmls.svg?branch=master
+[travis-url]: https://travis-ci.org/tunnckoCore/docks
+[travis-img]: https://travis-ci.org/tunnckoCore/docks.svg?branch=master
 
-[depstat-url]: https://david-dm.org/tunnckoCore/npmls
-[depstat-img]: https://david-dm.org/tunnckoCore/npmls.svg
+[depstat-url]: https://david-dm.org/tunnckoCore/docks
+[depstat-img]: https://david-dm.org/tunnckoCore/docks.svg
 
 [author-gittip-img]: http://img.shields.io/gittip/tunnckoCore.svg
 [author-gittip]: https://www.gittip.com/tunnckoCore
@@ -94,6 +103,7 @@ Released under the [`MIT`][license-url] license.
 [author-twitter]: https://twitter.com/tunnckoCore
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
+[author-more]: http://j.mp/1stW47C
 
 [ferver-img]: http://img.shields.io/badge/using-ferver-585858.svg
 [ferver-url]: https://github.com/jonathanong/ferver

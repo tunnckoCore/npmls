@@ -12,14 +12,23 @@
 
 var readdirp = require('readdirp');
 var through2 = require('through2');
+var pkg = require('./package.json');
 var path = require('path');
 var fs = require('fs');
 var npmls = '\x1b[36m\x1b[1m[npmls]\x1b[22m\x1b[39m ';
 var nPath = '/usr/local/n/versions';
 var isN = fs.existsSync(nPath);
 var isNvm = fs.existsSync(process.env.NVM_DIR);
-var isGlobal = process.argv[2] === '-g' ? true : false;
 var start, src, nvm, n, i=0;
+var isGlobal = false;
+
+if (process.argv[2] == '-v' || process.argv[2] === '--version') {
+  console.log('v' + pkg.version);
+  return;
+}
+if (process.argv[2] == '-g' || process.argv[2] === '--global') {
+  isGlobal = true;
+}
 
 if (isGlobal) {
   if (isNvm) {
