@@ -1,3 +1,6 @@
+## v1.0.4 / July 16, 2014
+- add `--global` flag, missed
+
 ## v1.0.3 / July 16, 2014
 - add `-v/--version` flag for self version
 
