@@ -44,6 +44,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 [author-twitter]: https://twitter.com/tunnckoCore
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
+[author-more]: http://j.mp/1stW47C
 
 [ferver-img]: http://img.shields.io/badge/using-ferver-585858.svg
 [ferver-url]: https://github.com/jonathanong/ferver

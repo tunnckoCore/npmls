@@ -24,17 +24,17 @@ yields
 ```
 [npmls] async
 [npmls] extend
+[npmls] randomorg-js
 [npmls] galaxy
 [npmls] galaxy-stack
-[npmls] galaxy-streams
+[npmls] koa-better-body
 [npmls] graceful-fs
 [npmls] handlebars
 [npmls] js-code-context
 [npmls] koa
-[npmls] koa-better-body
 [npmls] mkdirp
 [npmls] docks
-[npmls] randomorg-js
+[npmls] galaxy-streams
 [npmls] readdirp
 [npmls] through2
 -------------------------
@@ -61,7 +61,7 @@ yields
 [npmls] Found 11 modules. (27ms)
 ```
 
-**flags**
+## Flags
 + -v, --version - package version
 + -g, --global - list global installed modules
 
@@ -83,19 +83,19 @@ Released under the [`MIT`][license-url] license.
 
 [mocha-url]: https://github.com/visionmedia/mocha
 
-[contrib-url]: https://github.com/tunnckoCore/docks/graphs/contributors
-[npmjs-url]: http://npm.im/docks
-[npmjs-shields]: http://img.shields.io/npm/v/docks.svg
-[npmjs-install]: https://nodei.co/npm/docks.svg?mini=true
+[contrib-url]: https://github.com/tunnckoCore/npmls/graphs/contributors
+[npmjs-url]: http://npm.im/npmls
+[npmjs-shields]: http://img.shields.io/npm/v/npmls.svg
+[npmjs-install]: https://nodei.co/npm/npmls.svg?mini=true
 
-[license-url]: https://github.com/tunnckoCore/docks/blob/master/license.md
+[license-url]: https://github.com/tunnckoCore/npmls/blob/master/license.md
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg
 
-[travis-url]: https://travis-ci.org/tunnckoCore/docks
-[travis-img]: https://travis-ci.org/tunnckoCore/docks.svg?branch=master
+[travis-url]: https://travis-ci.org/tunnckoCore/npmls
+[travis-img]: https://travis-ci.org/tunnckoCore/npmls.svg?branch=master
 
-[depstat-url]: https://david-dm.org/tunnckoCore/docks
-[depstat-img]: https://david-dm.org/tunnckoCore/docks.svg
+[depstat-url]: https://david-dm.org/tunnckoCore/npmls
+[depstat-img]: https://david-dm.org/tunnckoCore/npmls.svg
 
 [author-gittip-img]: http://img.shields.io/gittip/tunnckoCore.svg
 [author-gittip]: https://www.gittip.com/tunnckoCore

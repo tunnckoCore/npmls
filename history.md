@@ -1,3 +1,6 @@
+## v1.0.5 / July 16, 2014
+- tweaks, refactoring, flags doc, history, badges, links
+
 ## v1.0.4 / July 16, 2014
 - add `--global` flag, missed
 
@@ -35,6 +38,7 @@
 [author-twitter]: https://twitter.com/tunnckoCore
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
+[author-more]: http://j.mp/1stW47C
 
 [ferver-img]: http://img.shields.io/badge/using-ferver-585858.svg
 [ferver-url]: https://github.com/jonathanong/ferver

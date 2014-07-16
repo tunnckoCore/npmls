@@ -1,6 +1,6 @@
 {
   "name": "npmls",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Streaming list of installed node modules. More compact and small. Support N and NVM version managers.",
   "main": "index.js",
   "bin": {
