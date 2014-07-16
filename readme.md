@@ -62,8 +62,8 @@ yields
 ```
 
 **flags**
-+ -v,--version - package version
-+ -g,--global - list global installed modules
++ -v, --version - package version
++ -g, --global - list global installed modules
 
 
 ## Authors & Contributors [![author tips][author-gittip-img]][author-gittip]
