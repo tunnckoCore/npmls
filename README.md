@@ -7,8 +7,7 @@
 
 ## Install
 ```
-npm i npmls -g
-npmls -h
+npm i npmls --save
 ```
 
 
@@ -53,16 +52,24 @@ npmls(function (err, modules) {
 
 
 ## CLI
-> Just run `npmls` or `npmls -h`
+> Just run `npm install -g npmls` to install it globally and try it.
 
 ```
-npmls
-1. add-package-owners
-2. apidocs-cli
-3. bower
-4. boy
-5. browserify
-...
+$ npmls -h
+Usage: npmls [options]
+
+Example
+  $ npmls
+  minimist
+  global-modules
+  ...
+
+Options
+  -v, --version    Shows module version
+  -g, --global     Lists globally installed modules
+  -h, --help       Shows this help
+
+Readme: https://github.com/tunnckoCore/npmls
 ```
 
 
