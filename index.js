@@ -1,84 +1,74 @@
-#!/usr/bin/env node
 /*!
  * npmls <https://github.com/tunnckoCore/npmls>
- * Streaming list of installed node modules. More compact and small.
- * Support N and NVM version managers.
- * 
- * Copyright (c) 2014 Charlike Mike Reagent, contributors.
+ *
+ * Copyright (c) 2014-2015 Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)
  * Released under the MIT license.
  */
 
-'use strict';
+'use strict'
 
-var readdirp = require('readdirp');
-var through2 = require('through2');
-var pkg = require('./package.json');
-var path = require('path');
-var fs = require('fs');
-var npmls = '\x1b[36m\x1b[1m[npmls]\x1b[22m\x1b[39m ';
-var nPath = '/usr/local/n/versions';
-var isN = fs.existsSync(nPath);
-var isNvm = fs.existsSync(process.env.NVM_DIR);
-var start, src, nvm, n, i=0;
-var isGlobal = false;
+var fs = require('fs')
+var path = require('path')
+var modules = require('global-modules')
+var cwd = process.cwd()
 
-if (process.argv[2] == '-v' || process.argv[2] === '--version') {
-  console.log('v' + pkg.version);
-  return;
-}
-if (process.argv[2] == '-g' || process.argv[2] === '--global') {
-  isGlobal = true;
-}
-
-if (isGlobal) {
-  if (isNvm) {
-    nvm = path.join(process.env.NVM_DIR, process.version,'lib');
-  } else if (isN) {
-    n = path.join(nPath, process.version.slice(1),'lib');
+/**
+ * List installed node modules, globally or locally.
+ *
+ * **Example**
+ *
+ * ```js
+ * var npmls = require('npmls')
+ *
+ * console.log(npmls())
+ * //=> [ 'add-package-owners',
+ * //  'apidocs-cli',
+ * //  'bower',
+ * //  'boy',
+ * //  'browserify',
+ * //  ...
+ * // ]
+ *
+ * // or asynchronously
+ * npmls(function (err, modules) {
+ *   if (err) return console.error(err)
+ *
+ *   console.log(modules)
+ *   //=> [ 'add-package-owners',
+ *   //  'apidocs-cli',
+ *   //  'bower',
+ *   //  'boy',
+ *   //  'browserify',
+ *   //  ...
+ *   // ]
+ * })
+ * ```
+ *
+ * @name  npmls
+ * @param  {Boolean}  `[local]` list local modules, default `false`
+ * @param  {Function} `[callback]` node-style callback
+ * @return {Array} list of modules if nod callback given
+ * @api public
+ */
+module.exports = function npmls (local, callback) {
+  if (typeof local === 'function') {
+    callback = local
+    local = false
   }
-  if (isNvm && isN) {
-    src = nvm;
-  } else if (isNvm && !isN) {
-    src = nvm;
-  } else if (!isNvm && isN) {
-    src = n;
+  var fp = local ? path.join(cwd, 'node_modules') : modules
+
+  if (typeof callback !== 'function') {
+    return cleanup(fs.readdirSync(fp))
   }
-} else {
-  src = process.cwd();
+  readAsync(fp, callback)
 }
 
-readdirp({
-  root: path.join(src,'node_modules'),
-  directoryFilter: [
-    '!lib',
-    '!lib-cov',
-    '!examples',
-    '!example',
-    '!bin',
-    '!test',
-    '!tests',
-    '!node_modules',
-    '!bower_components',
-    '!components',
-    '!.bin',
-    '!.git',
-    '!completion',
-    '!coverage',
-    '!tmp',
-    '!temp'
-  ],
-  fileFilter: [
-    'package.json'
-  ]
-})
-.pipe(through2.obj(function (file, _, next) {
-  if (!start) {start = Date.now();}
-  var moduleName = npmls + path.basename(file.parentDir) + '\n';
-  i++;
-  this.push(moduleName);
-  next();
-}, function () {
-  console.log('-------------------------');
-  console.log(npmls + 'Found', i, 'modules.','(' + (Date.now() - start) + 'ms)');
-}))
-.pipe(process.stdout);
+function readAsync (fp, callback) {
+  fs.readdir(fp, function (err, packages) {
+    callback(err, cleanup(packages))
+  })
+}
+
+function cleanup (res) {
+  return res[0] === '.bin' ? res.slice(1) : res
+}

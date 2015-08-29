@@ -1,47 +1,37 @@
 {
   "name": "npmls",
   "version": "1.0.5",
-  "description": "Streaming list of installed node modules. More compact and small. Support N and NVM version managers.",
-  "main": "index.js",
-  "bin": {
-    "npmls": "index.js"
-  },
+  "description": "Opinionated `npm ls` - list globally or locally installed node modules.",
   "repository": "tunnckoCore/npmls",
-  "keywords": [
-    "stream",
-    "streaming",
-    "list",
-    "check",
-    "all",
-    "node",
-    "n",
-    "nvm",
-    "version",
-    "managers",
-    "modules",
-    "nodemodules",
-    "npmls",
-    "npm",
-    "ls",
-    "globally",
-    "locally",
-    "installed",
-    "global",
-    "local",
-    "simple",
-    "process"
-  ],
-  "dependencies": {
-    "readdirp": "~1.1.0",
-    "through2": "~0.5.1"
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
   },
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://github.com/tunnckoCore/npmls/blob/master/license.md"
-  }],
-  "author": {
-    "name": "Charlike Mike Reagent",
-    "email": "mameto_100@mail.bg",
-    "url": "http://www.whistle-bg.tk"
-  }
+  "dependencies": {
+    "global-modules": "^0.2.0",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "ava": "^0.1.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "check",
+    "global",
+    "globally",
+    "list",
+    "local",
+    "locally",
+    "ls",
+    "modules",
+    "npm",
+    "npmls",
+    "package",
+    "pkg"
+  ],
+  "bin": "cli.js"
 }
