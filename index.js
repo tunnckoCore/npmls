@@ -45,17 +45,17 @@ var cwd = process.cwd()
  * ```
  *
  * @name  npmls
- * @param  {Boolean}  `[local]` list local modules, default `false`
+ * @param  {Boolean}  `[globally]` list global modules, default `false`
  * @param  {Function} `[callback]` node-style callback
  * @return {Array} list of modules if nod callback given
  * @api public
  */
-module.exports = function npmls (local, callback) {
-  if (typeof local === 'function') {
-    callback = local
-    local = false
+module.exports = function npmls (globally, callback) {
+  if (typeof globally === 'function') {
+    callback = globally
+    globally = false
   }
-  var fp = local ? path.join(cwd, 'node_modules') : modules
+  var fp = globally === true ? modules : path.join(cwd, 'node_modules')
 
   if (typeof callback !== 'function') {
     return cleanup(fs.readdirSync(fp))
@@ -70,5 +70,5 @@ function readAsync (fp, callback) {
 }
 
 function cleanup (res) {
-  return res[0] === '.bin' ? res.slice(1) : res
+  return res && res[0] === '.bin' ? res.slice(1) : res
 }

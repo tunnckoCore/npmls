@@ -17,7 +17,7 @@ npm i npmls --save
 ### [npmls](./index.js#L54)
 > List installed node modules, globally or locally.
 
-- `[local]` **{Boolean}** list local modules, default `false`    
+- `[globally]` **{Boolean}** list global modules, default `false`    
 - `[callback]` **{Function}** node-style callback    
 - `returns` **{Array}** list of modules if nod callback given  
 
@@ -26,24 +26,22 @@ npm i npmls --save
 ```js
 var npmls = require('npmls')
 
-console.log(npmls())
+console.log(npmls(true))
 //=> [ 'add-package-owners',
 //  'apidocs-cli',
 //  'bower',
-//  'boy',
 //  'browserify',
 //  ...
 // ]
 
 // or asynchronously
-npmls(function (err, modules) {
+npmls(true, function (err, modules) {
   if (err) return console.error(err)
 
   console.log(modules)
   //=> [ 'add-package-owners',
   //  'apidocs-cli',
   //  'bower',
-  //  'boy',
   //  'browserify',
   //  ...
   // ]
@@ -59,9 +57,16 @@ $ npmls -h
 Usage: npmls [options]
 
 Example
-  $ npmls
-  minimist
-  global-modules
+  $ npmls --global
+  add-package-owners
+  apidocs-cli
+  bower
+  browserify
+  ...
+  mocha
+  npm
+  npm-related
+  opn-cli
   ...
 
 Options

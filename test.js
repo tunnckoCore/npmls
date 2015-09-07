@@ -12,31 +12,31 @@
 var test = require('ava')
 var npmls = require('./index')
 
-test('list all global modules (sync) if `callback` given, but not function', function (t) {
+test('list all local modules if not `true` given', function (t) {
   t.true(npmls(123).length >= 1)
   t.end()
 })
-test('list all global modules (sync)', function (t) {
-  t.true(npmls().length >= 1)
+test('list all global modules (sync) only if `true`', function (t) {
+  t.true(npmls(true).length >= 1)
   t.end()
 })
-test('list all global modules (async)', function (t) {
+test('list all global modules (async) only if `true`', function (t) {
   t.plan(3)
-  npmls(function (err, res) {
+  npmls(true, function (err, res) {
     t.error(err)
     t.is(Array.isArray(res), true)
     t.true(res.length)
   })
 })
 test('list all local modules (sync)', function (t) {
-  t.true(npmls(true).length >= 1)
+  t.true(npmls().length >= 2)
   t.end()
 })
 test('list all local modules (async)', function (t) {
   t.plan(3)
-  npmls(true, function (err, res) {
+  npmls(function (err, res) {
     t.error(err)
     t.is(Array.isArray(res), true)
-    t.true(res.length >= 1)
+    t.true(res.length >= 2)
   })
 })
