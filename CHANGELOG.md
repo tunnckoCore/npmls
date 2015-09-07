@@ -1,9 +1,15 @@
 
 
+## 2.0.2 - 2015-09-07
+- Release v2.0.2 / npm@v2.0.2
+- add `cli.js` to files field in package.json, causeing installation fails
+
 ## 2.0.1 - 2015-09-07
+- Release v2.0.1 / npm@v2.0.1
 - fix global installation failing
 
 ## 2.0.0 - 2015-08-29
+- Release v2.0.0 / npm@v2.0.0
 - refactor
 
 ## 1.0.5 - 2014-07-16

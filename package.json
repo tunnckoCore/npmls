@@ -1,6 +1,6 @@
 {
   "name": "npmls",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Opinionated `npm ls` - list globally or locally installed node modules.",
   "repository": "tunnckoCore/npmls",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
