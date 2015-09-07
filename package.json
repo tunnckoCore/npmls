@@ -33,5 +33,7 @@
     "package",
     "pkg"
   ],
-  "bin": "cli.js"
+  "bin": {
+    "npmls": "cli.js"
+  }
 }
