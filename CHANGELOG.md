@@ -1,5 +1,12 @@
 
 
+## 3.0.0 - 2015-09-07
+- Release v3.0.0 / npm@v3.0.0
+- not works as expected, switch to show local modules by default
+- Javascript API pass `true` to show global modules
+- CLI API pass `-g` or `--global` to show global modules
+- fix `undefined` error when no `node_modules` folder
+
 ## 2.0.2 - 2015-09-07
 - Release v2.0.2 / npm@v2.0.2
 - add `cli.js` to files field in package.json, causeing installation fails
